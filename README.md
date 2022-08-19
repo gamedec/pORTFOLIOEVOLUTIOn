@@ -11,3 +11,5 @@ java -jar xxx.jar \<input file> \<operator> \<coin count (default 5)>
 
 
 ## Available Operators
+
+Tester: Run a simulation and print results
