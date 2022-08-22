@@ -24,3 +24,4 @@ ProbAllInit: Print the probabilities of each coin being 1 for all initialization
 ```
 $$ \begin{align*}  
     \text{Flip} & & i & & \text{(randomly set coin~$i$ to $0$ or $1$ with probability $1/2$ each)} \\  
+    \text{Not} & & i & & \text{(turn over the $i$th coin; i.e., deterministically reverse its $0$/$1$ status)} \\  
