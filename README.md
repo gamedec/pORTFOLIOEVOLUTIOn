@@ -20,3 +20,7 @@ ProbAllInit: Print the probabilities of each coin being 1 for all initialization
 
 
 ## Input Commands:
+
+```
+$$ \begin{align*}  
+    \text{Flip} & & i & & \text{(randomly set coin~$i$ to $0$ or $1$ with probability $1/2$ each)} \\  
