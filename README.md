@@ -25,3 +25,8 @@ ProbAllInit: Print the probabilities of each coin being 1 for all initialization
 $$ \begin{align*}  
     \text{Flip} & & i & & \text{(randomly set coin~$i$ to $0$ or $1$ with probability $1/2$ each)} \\  
     \text{Not} & & i & & \text{(turn over the $i$th coin; i.e., deterministically reverse its $0$/$1$ status)} \\  
+    \text{CNot} & & i\ j & & \text{(if coin~$i$ is $1$ (Tails) then do a Not on coin~$j$, else do nothing)}\\  
+    \text{CSwap} & & i\ j\ k & & \text{(if coin~$i$ is $1$ (Tails) then swap the values of coins $j$ and $k$)}  
+\end{align*}
+\begin{align*}  
+    \text{CCNot} & & i\ j \ k& & \text{(if coins~$i$ and $j$ are \emph{both} $1$ then do `Not~$k$', else do nothing)}\\  
