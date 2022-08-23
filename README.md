@@ -30,3 +30,8 @@ $$ \begin{align*}
 \end{align*}
 \begin{align*}  
     \text{CCNot} & & i\ j \ k& & \text{(if coins~$i$ and $j$ are \emph{both} $1$ then do `Not~$k$', else do nothing)}\\  
+    \text{GenFlip} & & i\ p & & \text{(set coin~$i$ to $0$ with probability $1-p$, to $1$ with probability $p$)} \\  
+    \text{Gen1Bit} & & i\ p\ q & & \text{(if coin~$i$ is $0$ then make it~$1$ with probability $p$,\qquad}\\  
+      & &  & & \text{else if coin~$i$ is $1$ then make it~$0$ with probability $q$)}  
+\end{align*} $$
+```
