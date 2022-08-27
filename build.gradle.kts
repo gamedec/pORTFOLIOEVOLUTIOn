@@ -10,3 +10,8 @@ group = "com.dedztbh"
 version = "1.2"
 
 val ejmlVersion = "0.39"
+
+
+repositories {
+    mavenCentral()
+}
