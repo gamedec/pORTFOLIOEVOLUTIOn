@@ -17,3 +17,9 @@ repositories {
 }
 dependencies {
     implementation("org.ejml:ejml-core:${ejmlVersion}")
+    implementation("org.ejml:ejml-kotlin:${ejmlVersion}")
+    implementation("org.ejml:ejml-ddense:${ejmlVersion}")
+    implementation("org.ejml:ejml-simple:${ejmlVersion}")
+}
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
