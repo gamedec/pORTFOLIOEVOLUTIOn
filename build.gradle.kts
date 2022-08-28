@@ -15,3 +15,5 @@ val ejmlVersion = "0.39"
 repositories {
     mavenCentral()
 }
+dependencies {
+    implementation("org.ejml:ejml-core:${ejmlVersion}")
