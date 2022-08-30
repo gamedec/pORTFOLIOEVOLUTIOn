@@ -38,3 +38,5 @@ tasks {
             attributes(mapOf("Main-Class" to "MainKt"))
         }
         minimize()
+    }
+}
