@@ -33,3 +33,8 @@ tasks.withType<KotlinCompile> {
 tasks {
     named<ShadowJar>("shadowJar") {
         archiveBaseName.set("cmu_coin_flipping_experience")
+        mergeServiceFiles()
+        manifest {
+            attributes(mapOf("Main-Class" to "MainKt"))
+        }
+        minimize()
