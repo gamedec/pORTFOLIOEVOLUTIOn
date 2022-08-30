@@ -28,3 +28,8 @@ tasks.withType<KotlinCompile> {
         "-Xno-call-assertions",
         "-Xno-receiver-assertions"
     )
+}
+
+tasks {
+    named<ShadowJar>("shadowJar") {
+        archiveBaseName.set("cmu_coin_flipping_experience")
