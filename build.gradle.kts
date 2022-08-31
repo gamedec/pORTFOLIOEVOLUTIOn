@@ -40,3 +40,7 @@ tasks {
         minimize()
     }
 }
+
+tasks {
+    build {
+        dependsOn(shadowJar)
