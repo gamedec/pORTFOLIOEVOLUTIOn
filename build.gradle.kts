@@ -44,3 +44,5 @@ tasks {
 tasks {
     build {
         dependsOn(shadowJar)
+    }
+}
