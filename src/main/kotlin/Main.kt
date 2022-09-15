@@ -16,3 +16,7 @@ fun main(args: Array<String>) {
     if (args.size < 2) throw IllegalArgumentException("Please provide input file and operator name")
 
     reader = File(args[0]).inputStream().bufferedReader()
+
+    val operator = Operator.get(args[1], if (args.size > 2) args[2].toInt() else DEFAULT_N)
+
+    var cmd = read()
