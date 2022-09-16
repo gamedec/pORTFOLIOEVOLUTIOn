@@ -20,3 +20,5 @@ fun main(args: Array<String>) {
     val operator = Operator.get(args[1], if (args.size > 2) args[2].toInt() else DEFAULT_N)
 
     var cmd = read()
+    while (true) {
+        if (cmd.isEmpty() || operator.runCmd(cmd) != 0) break
