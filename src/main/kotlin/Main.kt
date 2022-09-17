@@ -25,3 +25,5 @@ fun main(args: Array<String>) {
         cmd = read()
     }
     operator.done()
+    operator.printResult()
+}
