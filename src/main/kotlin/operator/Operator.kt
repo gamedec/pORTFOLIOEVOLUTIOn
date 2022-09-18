@@ -1,1 +1,1 @@
-package oper
+package operator
