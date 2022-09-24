@@ -1,4 +1,4 @@
 package operator
 
 /**
- * Created by 
+ * Created by DEDZ
