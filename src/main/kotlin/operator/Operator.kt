@@ -6,4 +6,4 @@ package operator
  */
 
 /**
- * Children class must ha
+ * Children class must hav
