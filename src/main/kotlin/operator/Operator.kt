@@ -6,4 +6,4 @@ package operator
  */
 
 /**
- * Children class must have a constr
+ * Children class must have a constru
