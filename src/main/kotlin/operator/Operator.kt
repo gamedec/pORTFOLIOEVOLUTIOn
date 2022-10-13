@@ -6,4 +6,4 @@ package operator
  */
 
 /**
- * Children class must have a constructor t
+ * Children class must have a constructor tha
