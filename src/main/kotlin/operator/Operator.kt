@@ -9,4 +9,4 @@ package operator
  * Children class must have a constructor that takes an Int
  */
 interface Operator {
-    fun ru
+    fun run
