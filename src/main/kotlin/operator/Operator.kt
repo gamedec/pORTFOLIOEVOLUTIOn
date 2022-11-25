@@ -11,4 +11,4 @@ package operator
 interface Operator {
     fun runCmd(cmd: String): Int
     fun printResult()
-   
+    fun
