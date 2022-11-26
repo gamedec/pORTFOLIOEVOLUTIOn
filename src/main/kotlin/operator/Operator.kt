@@ -13,3 +13,4 @@ interface Operator {
     fun printResult()
     fun done() {}
 
+   
