@@ -13,4 +13,4 @@ interface Operator {
     fun printResult()
     fun done() {}
 
-    companio
+    companion obj
