@@ -14,3 +14,4 @@ interface Operator {
     fun done() {}
 
     companion object {
+  
