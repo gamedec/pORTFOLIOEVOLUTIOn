@@ -14,4 +14,4 @@ interface Operator {
     fun done() {}
 
     companion object {
-        fun get(name: Stri
+        fun get(name: String, 
