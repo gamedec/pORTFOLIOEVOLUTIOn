@@ -15,4 +15,4 @@ interface Operator {
 
     companion object {
         fun get(name: String, N: Int) =
-          
+            
