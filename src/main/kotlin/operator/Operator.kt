@@ -16,4 +16,4 @@ interface Operator {
     companion object {
         fun get(name: String, N: Int) =
             Class.forName("operator.$name")
-                .getDeclaredConstructor(Int::class.
+                .getDeclaredConstructor(Int::class.java)
