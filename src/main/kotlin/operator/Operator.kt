@@ -17,4 +17,4 @@ interface Operator {
         fun get(name: String, N: Int) =
             Class.forName("operator.$name")
                 .getDeclaredConstructor(Int::class.java)
-                .newInstance(N) as Oper
+                .newInstance(N) as Operator
