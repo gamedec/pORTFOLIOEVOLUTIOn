@@ -18,4 +18,4 @@ interface Operator {
             Class.forName("operator.$name")
                 .getDeclaredConstructor(Int::class.java)
                 .newInstance(N) as Operator
-  
+    }
