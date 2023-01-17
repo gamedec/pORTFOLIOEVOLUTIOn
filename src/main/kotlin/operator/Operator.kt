@@ -19,3 +19,4 @@ interface Operator {
                 .getDeclaredConstructor(Int::class.java)
                 .newInstance(N) as Operator
     }
+}
