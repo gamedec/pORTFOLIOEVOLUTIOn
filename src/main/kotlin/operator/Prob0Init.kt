@@ -11,3 +11,6 @@ import kotlin.math.pow
 fun allStates(n: Int) =
     Array(2.0.pow(n).toInt()) {
         IntArray(n) { i -> (it shr i) and 1 }.apply { reverse() }
+    }
+
+class Prob0Init(N: Int) : ProbFinder(N) {
