@@ -14,3 +14,6 @@ fun allStates(n: Int) =
     }
 
 class Prob0Init(N: Int) : ProbFinder(N) {
+    override fun printResult() {
+        val probs = eval(getZeroVec())
+        allStates(N).forEach { endState ->
