@@ -19,3 +19,6 @@ class Prob0Init(N: Int) : ProbFinder(N) {
         allStates(N).forEach { endState ->
             var prob = 1.0
             endState.forEach { i ->
+                val x = probs[i]
+                prob *= if (i > 0) x else 1.0 - x
+            }
