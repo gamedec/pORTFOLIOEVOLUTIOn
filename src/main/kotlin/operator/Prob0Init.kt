@@ -25,3 +25,4 @@ class Prob0Init(N: Int) : ProbFinder(N) {
             println("Pr[%s] = %.10f".format(endState.joinToString(","), prob))
         }
     }
+}
