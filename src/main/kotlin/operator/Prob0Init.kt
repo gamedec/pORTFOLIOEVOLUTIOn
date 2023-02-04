@@ -22,3 +22,6 @@ class Prob0Init(N: Int) : ProbFinder(N) {
                 val x = probs[i]
                 prob *= if (i > 0) x else 1.0 - x
             }
+            println("Pr[%s] = %.10f".format(endState.joinToString(","), prob))
+        }
+    }
