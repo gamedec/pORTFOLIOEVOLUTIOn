@@ -11,3 +11,8 @@ import kotlin.math.pow
 
 fun allStatesDouble(n: Int) =
     Array(2.0.pow(n).toInt()) {
+        DoubleArray(n) { i -> ((it shr i) and 1).toDouble() }.apply { reverse() }
+    }
+
+class ProbAllInit(N: Int) : ProbFinder(N) {
+    override fun printResult() {
