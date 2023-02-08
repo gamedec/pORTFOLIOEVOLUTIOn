@@ -16,3 +16,6 @@ fun allStatesDouble(n: Int) =
 
 class ProbAllInit(N: Int) : ProbFinder(N) {
     override fun printResult() {
+        eval(
+            // a 2^n by n matrix
+            DMatrixRMaj(allStatesDouble(N))
