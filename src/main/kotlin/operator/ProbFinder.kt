@@ -8,3 +8,5 @@ import org.ejml.kotlin.plus
 import org.ejml.kotlin.plusAssign
 import org.ejml.kotlin.times
 import util.*
+
+sealed class Operation
