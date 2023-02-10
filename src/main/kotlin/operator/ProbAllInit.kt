@@ -19,3 +19,6 @@ class ProbAllInit(N: Int) : ProbFinder(N) {
         eval(
             // a 2^n by n matrix
             DMatrixRMaj(allStatesDouble(N))
+        ).print()
+    }
+}
