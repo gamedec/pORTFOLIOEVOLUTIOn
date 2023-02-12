@@ -12,3 +12,5 @@ import util.*
 sealed class Operation
 data class MatrixOp(val opVec: DMatrixRMaj, val opBias: DMatrixRMaj) : Operation()
 data class CNot(val i: Int, val j: Int) : Operation()
+data class CSwap(val i: Int, val j: Int, val k: Int) : Operation()
+data class CCNot(val i: Int, val j: Int, val k: Int) : Operation()
