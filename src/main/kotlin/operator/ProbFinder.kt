@@ -17,3 +17,5 @@ data class CCNot(val i: Int, val j: Int, val k: Int) : Operation()
 data class Gen1Bit(val i: Int, val p: Double, val q: Double) : Operation()
 
 /**
+ * Created by DEDZTBH on 2020/09/15.
+ * Project CMU_Coin-flipping_Experience
