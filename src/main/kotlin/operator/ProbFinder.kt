@@ -19,3 +19,6 @@ data class Gen1Bit(val i: Int, val p: Double, val q: Double) : Operation()
 /**
  * Created by DEDZTBH on 2020/09/15.
  * Project CMU_Coin-flipping_Experience
+ */
+abstract class ProbFinder(val N: Int) : Operator {
+    fun getOneVec(): DMatrixRMaj = DMatrixRMaj(arrayOf(DoubleArray(N) { 1.0 }))
