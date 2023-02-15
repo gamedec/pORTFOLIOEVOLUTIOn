@@ -25,3 +25,9 @@ abstract class ProbFinder(val N: Int) : Operator {
     fun getZeroVec(): DMatrixRMaj = DMatrixRMaj(1, N)
     fun saveMatrix() {
         if (matrixDirty) {
+            operations.add(MatrixOp(opVec, opBias))
+            opVec = getOneVec()
+            opBias = getZeroVec()
+            matrixDirty = false
+        }
+    }
