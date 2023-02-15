@@ -22,3 +22,6 @@ data class Gen1Bit(val i: Int, val p: Double, val q: Double) : Operation()
  */
 abstract class ProbFinder(val N: Int) : Operator {
     fun getOneVec(): DMatrixRMaj = DMatrixRMaj(arrayOf(DoubleArray(N) { 1.0 }))
+    fun getZeroVec(): DMatrixRMaj = DMatrixRMaj(1, N)
+    fun saveMatrix() {
+        if (matrixDirty) {
