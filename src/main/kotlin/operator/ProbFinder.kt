@@ -33,3 +33,5 @@ abstract class ProbFinder(val N: Int) : Operator {
     }
 
     var opVec = getOneVec()
+    var opBias = getZeroVec()
+    var matrixDirty = false
