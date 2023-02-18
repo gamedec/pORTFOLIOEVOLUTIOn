@@ -35,3 +35,8 @@ abstract class ProbFinder(val N: Int) : Operator {
     var opVec = getOneVec()
     var opBias = getZeroVec()
     var matrixDirty = false
+
+    val operations = mutableListOf<Operation>()
+
+    override fun runCmd(cmd: String): Int {
+        val i = readInt()
