@@ -40,3 +40,4 @@ abstract class ProbFinder(val N: Int) : Operator {
 
     override fun runCmd(cmd: String): Int {
         val i = readInt()
+        when (cmd) {
