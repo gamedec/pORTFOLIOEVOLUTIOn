@@ -50,3 +50,5 @@ abstract class ProbFinder(val N: Int) : Operator {
                 opVec[i] *= -1.0
                 opBias[i] = 1.0 - opBias[i]
                 matrixDirty = true
+            }
+            "CNot" -> { // cannot represent in matrix op
