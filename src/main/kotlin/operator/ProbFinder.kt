@@ -41,3 +41,6 @@ abstract class ProbFinder(val N: Int) : Operator {
     override fun runCmd(cmd: String): Int {
         val i = readInt()
         when (cmd) {
+            "Flip" -> {
+                opVec[i] = 0.0
+                opBias[i] = 0.5
