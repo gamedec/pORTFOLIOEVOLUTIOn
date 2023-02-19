@@ -52,3 +52,8 @@ abstract class ProbFinder(val N: Int) : Operator {
                 matrixDirty = true
             }
             "CNot" -> { // cannot represent in matrix op
+                val j = readInt()
+                saveMatrix()
+                operations.add(CNot(i, j))
+            }
+            "CSwap" -> { // cannot represent in matrix op
