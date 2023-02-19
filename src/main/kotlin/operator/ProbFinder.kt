@@ -44,3 +44,9 @@ abstract class ProbFinder(val N: Int) : Operator {
             "Flip" -> {
                 opVec[i] = 0.0
                 opBias[i] = 0.5
+                matrixDirty = true
+            }
+            "Not" -> {
+                opVec[i] *= -1.0
+                opBias[i] = 1.0 - opBias[i]
+                matrixDirty = true
