@@ -57,3 +57,6 @@ abstract class ProbFinder(val N: Int) : Operator {
                 operations.add(CNot(i, j))
             }
             "CSwap" -> { // cannot represent in matrix op
+                val j = readInt()
+                val k = readInt()
+                saveMatrix()
