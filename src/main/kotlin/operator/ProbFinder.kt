@@ -65,3 +65,5 @@ abstract class ProbFinder(val N: Int) : Operator {
             "CCNOT" -> { // cannot represent in matrix op
                 val j = readInt()
                 val k = readInt()
+                saveMatrix()
+                operations.add(CCNot(i, j, k))
