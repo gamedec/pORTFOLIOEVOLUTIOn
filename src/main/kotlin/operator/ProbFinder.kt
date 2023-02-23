@@ -67,3 +67,5 @@ abstract class ProbFinder(val N: Int) : Operator {
                 val k = readInt()
                 saveMatrix()
                 operations.add(CCNot(i, j, k))
+            }
+            "GenFlip" -> {
