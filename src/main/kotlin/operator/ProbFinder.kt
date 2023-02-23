@@ -69,3 +69,6 @@ abstract class ProbFinder(val N: Int) : Operator {
                 operations.add(CCNot(i, j, k))
             }
             "GenFlip" -> {
+                val j = readDouble()
+                opVec[i] = 0.0
+                opBias[i] = j
