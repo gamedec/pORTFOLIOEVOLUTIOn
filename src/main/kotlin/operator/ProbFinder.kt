@@ -72,3 +72,7 @@ abstract class ProbFinder(val N: Int) : Operator {
                 val j = readDouble()
                 opVec[i] = 0.0
                 opBias[i] = j
+                matrixDirty = true
+            }
+            "Gen1Bit" -> { // cannot represent in matrix op
+                val p = readDouble()
