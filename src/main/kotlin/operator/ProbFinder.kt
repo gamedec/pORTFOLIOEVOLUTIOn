@@ -81,3 +81,5 @@ abstract class ProbFinder(val N: Int) : Operator {
                 operations.add(Gen1Bit(i, p, q))
             }
             else -> return -1
+        }
+        return 0
