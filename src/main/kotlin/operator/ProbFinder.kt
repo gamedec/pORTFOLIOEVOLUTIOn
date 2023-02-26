@@ -79,3 +79,5 @@ abstract class ProbFinder(val N: Int) : Operator {
                 val q = readDouble()
                 saveMatrix()
                 operations.add(Gen1Bit(i, p, q))
+            }
+            else -> return -1
