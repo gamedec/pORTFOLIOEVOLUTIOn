@@ -83,3 +83,6 @@ abstract class ProbFinder(val N: Int) : Operator {
             else -> return -1
         }
         return 0
+    }
+
+    override fun done() = saveMatrix()
