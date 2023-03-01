@@ -86,3 +86,5 @@ abstract class ProbFinder(val N: Int) : Operator {
     }
 
     override fun done() = saveMatrix()
+
+    fun eval(probs: DMatrixRMaj): DMatrixRMaj = probs.apply {
