@@ -100,3 +100,8 @@ abstract class ProbFinder(val N: Int) : Operator {
                     is CNot -> {
                         val x = probs getColumn i
                         val y = probs getColumn j
+                        //(1 - x) * y + x * (1 - y)
+                        probs.putColumn(j, (-2.0 * x mul y) + x + y)
+                    }
+                    is CSwap -> {
+                        val x = probs getColumn i
