@@ -91,3 +91,8 @@ abstract class ProbFinder(val N: Int) : Operator {
         val broadcastVec =
             DMatrixRMaj(probs.numRows, 1, true, *DoubleArray(probs.numRows) { 1.0 })
         operations.forEach {
+            it.apply {
+                when (this) {
+                    is MatrixOp -> {
+                        CommonOps_DDRM.elementMult(probs, broadcastVec * opVec)
+                        probs += broadcastVec * opBias
