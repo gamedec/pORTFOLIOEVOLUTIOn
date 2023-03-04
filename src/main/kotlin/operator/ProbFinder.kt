@@ -96,3 +96,7 @@ abstract class ProbFinder(val N: Int) : Operator {
                     is MatrixOp -> {
                         CommonOps_DDRM.elementMult(probs, broadcastVec * opVec)
                         probs += broadcastVec * opBias
+                    }
+                    is CNot -> {
+                        val x = probs getColumn i
+                        val y = probs getColumn j
