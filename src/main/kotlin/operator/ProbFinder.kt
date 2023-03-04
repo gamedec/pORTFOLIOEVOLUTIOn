@@ -88,3 +88,6 @@ abstract class ProbFinder(val N: Int) : Operator {
     override fun done() = saveMatrix()
 
     fun eval(probs: DMatrixRMaj): DMatrixRMaj = probs.apply {
+        val broadcastVec =
+            DMatrixRMaj(probs.numRows, 1, true, *DoubleArray(probs.numRows) { 1.0 })
+        operations.forEach {
