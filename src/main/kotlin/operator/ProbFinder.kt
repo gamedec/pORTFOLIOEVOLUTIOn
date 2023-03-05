@@ -105,3 +105,6 @@ abstract class ProbFinder(val N: Int) : Operator {
                     }
                     is CSwap -> {
                         val x = probs getColumn i
+                        val y = probs getColumn j
+                        val z = probs getColumn k
+                        val xy = x mul y
