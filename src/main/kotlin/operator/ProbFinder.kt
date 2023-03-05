@@ -112,3 +112,4 @@ abstract class ProbFinder(val N: Int) : Operator {
                         //(1 - x) * y + x * z
                         probs.putColumn(j, y - xy + xz)
                         //(1 - x) * z + x * y
+                        probs.putColumn(k, z - xz + xy)
