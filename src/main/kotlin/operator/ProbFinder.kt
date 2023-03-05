@@ -108,3 +108,7 @@ abstract class ProbFinder(val N: Int) : Operator {
                         val y = probs getColumn j
                         val z = probs getColumn k
                         val xy = x mul y
+                        val xz = x mul z
+                        //(1 - x) * y + x * z
+                        probs.putColumn(j, y - xy + xz)
+                        //(1 - x) * z + x * y
