@@ -115,3 +115,7 @@ abstract class ProbFinder(val N: Int) : Operator {
                         probs.putColumn(k, z - xz + xy)
                     }
                     is CCNot -> {
+                        val x = probs getColumn i
+                        val y = probs getColumn j
+                        val z = probs getColumn k
+                        //(1 - x) * (1 - y)
