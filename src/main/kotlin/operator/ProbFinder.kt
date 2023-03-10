@@ -129,3 +129,6 @@ abstract class ProbFinder(val N: Int) : Operator {
                         val pComp = 1.0 - p
                         //x * (1 - q) * x + (1 - x) * (p + (1 - p) * x)
                         //= xx(1-q) + p + (1-p)x - xp - xx(1-p)
+                        probs.putColumn(i, (xx * (1.0 - q)) + p + (x * pComp) - (x * p) - (xx * pComp))
+                    }
+                }
