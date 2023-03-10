@@ -122,3 +122,7 @@ abstract class ProbFinder(val N: Int) : Operator {
                         val probBoth0 = (x mul y) - x - y + 1.0
                         //probBoth0 * z + (1 - probBoth0) * (1 - z)
                         probs.putColumn(k, (2.0 * probBoth0 mul z) - probBoth0 - z + 1.0)
+                    }
+                    is Gen1Bit -> {
+                        val x = probs getColumn i
+                        val xx = x mul x
