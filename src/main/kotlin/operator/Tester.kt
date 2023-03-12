@@ -12,3 +12,5 @@ import kotlin.random.Random
 
 infix fun IntArray.flip(i: Int) = set(i, get(i) xor 1)
 fun IntArray.swap(i: Int, j: Int) = set(i, get(j).also { set(j, get(i)) })
+
+class Tester(N: Int) : Operator {
