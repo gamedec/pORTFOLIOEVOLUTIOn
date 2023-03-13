@@ -16,3 +16,8 @@ fun IntArray.swap(i: Int, j: Int) = set(i, get(j).also { set(j, get(i)) })
 class Tester(N: Int) : Operator {
 
     private val coins = IntArray(N)
+
+    override fun runCmd(cmd: String): Int {
+        val i = readInt()
+        when (cmd) {
+            "Flip" -> coins[i] = Random.nextBits(1)
