@@ -21,3 +21,5 @@ class Tester(N: Int) : Operator {
         val i = readInt()
         when (cmd) {
             "Flip" -> coins[i] = Random.nextBits(1)
+            "Not" -> coins flip i
+            "CNot" -> readInt().let { j -> if (coins[i] != 0) coins[j] = coins[j] xor 1 }
