@@ -23,3 +23,6 @@ class Tester(N: Int) : Operator {
             "Flip" -> coins[i] = Random.nextBits(1)
             "Not" -> coins flip i
             "CNot" -> readInt().let { j -> if (coins[i] != 0) coins[j] = coins[j] xor 1 }
+            "CSwap" -> {
+                val j = readInt()
+                val k = readInt()
