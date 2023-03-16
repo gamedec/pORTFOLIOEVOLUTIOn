@@ -26,3 +26,8 @@ class Tester(N: Int) : Operator {
             "CSwap" -> {
                 val j = readInt()
                 val k = readInt()
+                if (coins[i] != 0) coins.swap(j, k)
+            }
+            "CCNOT" -> {
+                val j = readInt()
+                val k = readInt()
