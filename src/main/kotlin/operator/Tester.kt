@@ -31,3 +31,8 @@ class Tester(N: Int) : Operator {
             "CCNOT" -> {
                 val j = readInt()
                 val k = readInt()
+                if (coins[i] or coins[j] != 0) coins flip k
+            }
+            "GenFlip" -> coins[i] = if (Random.nextDouble() < readDouble()) 1 else 0
+            "Gen1Bit" -> {
+                val p = readDouble()
