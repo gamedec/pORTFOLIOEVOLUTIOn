@@ -46,3 +46,6 @@ class Tester(N: Int) : Operator {
         }
         return 0
     }
+
+    override fun printResult() {
+        println("[${coins.joinToString(",")}]")
