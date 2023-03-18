@@ -36,3 +36,9 @@ class Tester(N: Int) : Operator {
             "GenFlip" -> coins[i] = if (Random.nextDouble() < readDouble()) 1 else 0
             "Gen1Bit" -> {
                 val p = readDouble()
+                val q = readDouble()
+                if (coins[i] == 0) {
+                    if (Random.nextDouble() < p) coins[i] = 1
+                } else
+                    if (Random.nextDouble() < q) coins[i] = 0
+            }
