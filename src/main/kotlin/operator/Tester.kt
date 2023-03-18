@@ -42,3 +42,7 @@ class Tester(N: Int) : Operator {
                 } else
                     if (Random.nextDouble() < q) coins[i] = 0
             }
+            else -> return -1
+        }
+        return 0
+    }
