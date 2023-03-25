@@ -11,3 +11,8 @@ import java.util.*
 
 @JvmField
 var _tokenizer: StringTokenizer = StringTokenizer("")
+fun read(): String {
+    while (!_tokenizer.hasMoreTokens())
+        _tokenizer = StringTokenizer(reader.readLine() ?: return "", " ")
+    return _tokenizer.nextToken()
+}
