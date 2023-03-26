@@ -16,3 +16,6 @@ fun read(): String {
         _tokenizer = StringTokenizer(reader.readLine() ?: return "", " ")
     return _tokenizer.nextToken()
 }
+
+fun readInt() = read().toInt()
+fun readDouble() = read().toDouble()
