@@ -12,3 +12,8 @@ import org.ejml.simple.ops.SimpleOperations_DDRM
 
 /**
  * Retrieve column i
+ */
+infix fun DMatrixRMaj.getColumn(i: Int) = CommonOps_DDRM.extractColumn(this, i, null)
+
+/**
+ * Replace column i
