@@ -24,3 +24,7 @@ fun DMatrixRMaj.putColumn(i: Int, col: DMatrixRMaj) = simpleOps.setColumn(this, 
 /**
  * Element-wise multiplication (pure)
  */
+infix fun DMatrixRMaj.mul(other: DMatrixRMaj) = createLike().also { CommonOps_DDRM.elementMult(this, other, it) }
+
+/**
+ * Scalar Multiplication (pure)
