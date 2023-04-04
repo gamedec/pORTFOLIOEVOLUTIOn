@@ -28,3 +28,6 @@ infix fun DMatrixRMaj.mul(other: DMatrixRMaj) = createLike().also { CommonOps_DD
 
 /**
  * Scalar Multiplication (pure)
+ */
+operator fun DMatrixRMaj.times(f: Double) = createLike().also { CommonOps_DDRM.scale(f, this, it) }
+operator fun Double.times(f: DMatrixRMaj) = f * this
