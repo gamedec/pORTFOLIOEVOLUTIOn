@@ -20,3 +20,7 @@ infix fun DMatrixRMaj.getColumn(i: Int) = CommonOps_DDRM.extractColumn(this, i, 
  */
 val simpleOps = SimpleOperations_DDRM()
 fun DMatrixRMaj.putColumn(i: Int, col: DMatrixRMaj) = simpleOps.setColumn(this, i, 0, *col.data)
+
+/**
+ * Element-wise multiplication (pure)
+ */
